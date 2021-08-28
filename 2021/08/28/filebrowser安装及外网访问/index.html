@@ -18,16 +18,16 @@
   
   
   <title>filebrowser安装及外网访问 | Wenqing&#39;s blog</title>
-  <meta name="description" content="1.准备环境：  natapp web隧道（使用优惠码：C7F968E9，可以享受9折优惠） Windows主机，运行filebrowser程序，以及frp客户端程序   2.FileBrowser安装及配置 这里以Windows系统为例进行介绍，从 https:&#x2F;&#x2F;github.com&#x2F;filebrowser&#x2F;filebrowser&#x2F;releases&#x2F;latest 下载好程序包，解压即可。接下">
+  <meta name="description" content="1.准备环境：  natapp web隧道（使用优惠码：C7F968E9，可以享受9折优惠） Windows主机，运行filebrowser程序，以及natapp客户端程序   2.FileBrowser安装及配置 这里以Windows系统为例进行介绍，从 https:&#x2F;&#x2F;github.com&#x2F;filebrowser&#x2F;filebrowser&#x2F;releases&#x2F;latest  下载好程序包，解压即">
 <meta property="og:type" content="article">
 <meta property="og:title" content="filebrowser安装及外网访问">
 <meta property="og:url" content="https://ouening.github.io/2021/08/28/filebrowser%E5%AE%89%E8%A3%85%E5%8F%8A%E5%A4%96%E7%BD%91%E8%AE%BF%E9%97%AE/index.html">
 <meta property="og:site_name" content="Wenqing&#39;s blog">
-<meta property="og:description" content="1.准备环境：  natapp web隧道（使用优惠码：C7F968E9，可以享受9折优惠） Windows主机，运行filebrowser程序，以及frp客户端程序   2.FileBrowser安装及配置 这里以Windows系统为例进行介绍，从 https:&#x2F;&#x2F;github.com&#x2F;filebrowser&#x2F;filebrowser&#x2F;releases&#x2F;latest 下载好程序包，解压即可。接下">
+<meta property="og:description" content="1.准备环境：  natapp web隧道（使用优惠码：C7F968E9，可以享受9折优惠） Windows主机，运行filebrowser程序，以及natapp客户端程序   2.FileBrowser安装及配置 这里以Windows系统为例进行介绍，从 https:&#x2F;&#x2F;github.com&#x2F;filebrowser&#x2F;filebrowser&#x2F;releases&#x2F;latest  下载好程序包，解压即">
 <meta property="og:locale">
 <meta property="og:image" content="https://ouening.github.io/images/image-20210828191544865.png">
 <meta property="article:published_time" content="2021-08-27T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-08-28T11:33:46.826Z">
+<meta property="article:modified_time" content="2021-08-28T11:50:46.253Z">
 <meta property="article:author" content="Wenqing Zhou">
 <meta property="article:tag" content="Web">
 <meta name="twitter:card" content="summary">
@@ -351,10 +351,10 @@
         <h2 id="1准备环境"><a class="markdownIt-Anchor" href="#1准备环境"></a> 1.准备环境：</h2>
 <ol>
 <li>natapp web隧道（使用优惠码：C7F968E9，可以享受9折优惠）</li>
-<li>Windows主机，运行filebrowser程序，以及frp客户端程序</li>
+<li>Windows主机，运行filebrowser程序，以及natapp客户端程序</li>
 </ol>
 <h2 id="2filebrowser安装及配置"><a class="markdownIt-Anchor" href="#2filebrowser安装及配置"></a> 2.FileBrowser安装及配置</h2>
-<p>这里以Windows系统为例进行介绍，从 <a target="_blank" rel="noopener" href="https://github.com/filebrowser/filebrowser/releases/latest">https://github.com/filebrowser/filebrowser/releases/latest</a> 下载好程序包，解压即可。接下来，<a target="_blank" rel="noopener" href="https://www.cnblogs.com/webenh/p/13334303.html">按照博客的介绍</a>，执行以下操作：</p>
+<p>这里以Windows系统为例进行介绍，从 <a target="_blank" rel="noopener" href="https://github.com/filebrowser/filebrowser/releases/latest">https://github.com/filebrowser/filebrowser/releases/latest </a> 下载好程序包，解压即可。接下来，<a target="_blank" rel="noopener" href="https://www.cnblogs.com/webenh/p/13334303.html">按照博客的介绍</a>，执行以下操作：</p>
 <blockquote>
 <p>创建配置数据库：<code>filebrowser -d filebrowser.db config init</code></p>
 <p>设置监听地址：<code>filebrowser -d filebrowser.db config set --address 0.0.0.0</code></p>
@@ -369,7 +369,7 @@
 </blockquote>
 <p>至此，在浏览器上输入 <code>127.0.0.1:8080</code> ，便能进入File Browser的界面了</p>
 <h2 id="4-windows配置natapp客户端"><a class="markdownIt-Anchor" href="#4-windows配置natapp客户端"></a> 4. Windows配置NATAPP客户端</h2>
-<p>首先在 <a target="_blank" rel="noopener" href="https://natapp.cn/">https://natapp.cn/</a> 购买web隧道，笔者用的是VIP 1型隧道服务，购买一个二级域名，3元/年，加上隧道服务50多元半年（使用优惠码：C7F968E9，可以享受9折优惠），购买的时候需要设置需要绑定的本地端口，例如前面设置的filebrowser服务端口为8080。下载Windows版本的natapp，解压，打开控制台运行:</p>
+<p>首先在 <a target="_blank" rel="noopener" href="https://natapp.cn/">https://natapp.cn/</a> 购买web隧道，笔者用的是VIP 1型隧道服务，购买一个二级域名，3元/年，加上隧道服务50多元半年（使用优惠码：C7F968E9，可以享受9折优惠），购买的时候需要设置需要绑定的本地端口，例如前面设置的<code>filebrowser</code>服务端口为8080。下载Windows版本的natapp，解压，打开控制台运行:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">natapp.exe -authtoken=xxxx # 购买隧道后在natapp可以找到authtoken，例如：0d5ag0c0761eb4fb</span><br></pre></td></tr></table></figure>
 <p>得到以下提示：</p>
 <p><img src="/images/image-20210828191544865.png" alt="image-20210828191544865" /></p>
